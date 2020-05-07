@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User likes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css.map">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="/">LOGO</a>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar top-bar"></span>
+                    <span class="icon-bar middle-bar"></span>
+                    <span class="icon-bar bottom-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/user-likes.html"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <section class="section section-filters">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="offset-md-2"></div>
+                <div class="col-md-8">
+                    <form class="main-form-filters">
+                        <div class="row">
+                            <div class="col-xl-2">
+                                <div class="form-group">
+                                    <label for="gender">Find me a</label>
+                                    <select class="form-control select-element" name="gender" id="gender">
+                                        <option value="female">Female</option>
+                                        <option value="male">Male</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xl-3">
+                                <div class="d-flex justify-content-between">
+                                    <label for="age">Age from:</label>
+                                    <input type="text" id="age" readonly>
+                                </div>
+                                <div>
+                                    <div id="slider-range"></div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3">
+                                <div class="form-group">
+                                    <label for="city">From</label>
+                                    <select class="form-control select-element" name="city" id="city">
+                                        <option value="female">Belgrade</option>
+                                        <option value="male">Barcelona</option>
+                                        <option value="male">Madrid</option>
+                                        <option value="male">Berlin</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 d-flex align-items-center justify-content-between">
+                                <div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios"
+                                            id="exampleRadios1" value="option1" checked>
+                                        <label class="form-check-label" for="exampleRadios1">
+                                            With photo
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios"
+                                            id="exampleRadios1" value="option1" checked>
+                                        <label class="form-check-label" for="exampleRadios1">
+                                            Outline now
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="submit-form">
+                                    <button type="submit" class="button-find">Find now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section home-users">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="offset-xl-2"></div>
+                <div class="col-xl-8 order-2 order-xl-1">
+                    <div class="row">
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 ">
+                            <div class="user-card">
+                                <div class="user-card-like"><img src="./images/heart-small.png" alt=""></div>
+                                <div class="user-card-img">
+                                    <img src="./images/user-image.png" alt class="w-100">
+                                </div>
+                                <div class="user-info d-flex justify-content-between">
+                                    <div class="user-name">
+                                        <div class="active-user"></div> Jenna Luis <span class="user-age">29</span>
+                                    </div>
+                                    <div class="user-msg-icon">
+                                        <img src="./images/msg-filled-red.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="user-card-location">
+                                    <img src="./images/address.png">
+                                    Belgrade
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                            <div class="user-card">
+                                <div class="user-card-like"><img src="./images/heart-small.png" alt=""></div>
+                                <div class="user-card-img">
+                                    <img src="./images/user-image.png" alt class="w-100">
+                                </div>
+                                <div class="user-info d-flex justify-content-between">
+                                    <div class="user-name">
+                                        <div class="active-user"></div> Jenna Luis <span class="user-age">29</span>
+                                    </div>
+                                    <div class="user-msg-icon">
+                                        <img src="./images/msg-filled-red.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="user-card-location">
+                                    <img src="./images/address.png">
+                                    Belgrade
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                            <div class="user-card">
+                                <div class="user-card-like"><img src="./images/heart-small.png" alt=""></div>
+                                <div class="user-card-img">
+                                    <img src="./images/user-image.png" alt class="w-100">
+                                </div>
+                                <div class="user-info d-flex justify-content-between">
+                                    <div class="user-name">
+                                        <div class="active-user"></div> Jenna Luis <span class="user-age">29</span>
+                                    </div>
+                                    <div class="user-msg-icon">
+                                        <img src="./images/msg-filled-red.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="user-card-location">
+                                    <img src="./images/address.png">
+                                    Belgrade
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                            <div class="user-card">
+                                <div class="user-card-like"><img src="./images/heart-small.png" alt=""></div>
+                                <div class="user-card-img">
+                                    <img src="./images/user-image.png" alt class="w-100">
+                                </div>
+                                <div class="user-info d-flex justify-content-between">
+                                    <div class="user-name">Jenna Luis <span class="user-age">29</span></div>
+                                    <div class="user-msg-icon">
+                                        <img src="./images/msg-filled-red.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="user-card-location">
+                                    <img src="./images/address.png">
+                                    Belgrade
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                            <div class="user-card">
+                                <div class="user-card-like"><img src="./images/heart-small.png" alt=""></div>
+                                <div class="user-card-img">
+                                    <img src="./images/user-image.png" alt class="w-100">
+                                </div>
+                                <div class="user-info d-flex justify-content-between">
+                                    <div class="user-name">Jenna Luis <span class="user-age">29</span></div>
+                                    <div class="user-msg-icon">
+                                        <img src="./images/msg-filled-red.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="user-card-location">
+                                    <img src="./images/address.png">
+                                    Belgrade
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                            <div class="user-card">
+                                <div class="user-card-like"><img src="./images/heart-small.png" alt=""></div>
+                                <div class="user-card-img">
+                                    <img src="./images/user-image.png" alt class="w-100">
+                                </div>
+                                <div class="user-info d-flex justify-content-between">
+                                    <div class="user-name">Jenna Luis <span class="user-age">29</span></div>
+                                    <div class="user-msg-icon">
+                                        <img src="./images/msg-filled-red.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="user-card-location">
+                                    <img src="./images/address.png">
+                                    Belgrade
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                            <div class="user-card">
+                                <div class="user-card-like"><img src="./images/heart-small.png" alt=""></div>
+                                <div class="user-card-img">
+                                    <img src="./images/user-image.png" alt class="w-100">
+                                </div>
+                                <div class="user-info d-flex justify-content-between">
+                                    <div class="user-name">Jenna Luis <span class="user-age">29</span></div>
+                                    <div class="user-msg-icon">
+                                        <img src="./images/msg-filled-red.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="user-card-location">
+                                    <img src="./images/address.png">
+                                    Belgrade
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                            <div class="user-card">
+                                <div class="user-card-like"><img src="./images/heart-small.png" alt=""></div>
+                                <div class="user-card-img">
+                                    <img src="./images/user-image.png" alt class="w-100">
+                                </div>
+                                <div class="user-info d-flex justify-content-between">
+                                    <div class="user-name">Jenna Luis <span class="user-age">29</span></div>
+                                    <div class="user-msg-icon">
+                                        <img src="./images/msg-filled-red.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="user-card-location">
+                                    <img src="./images/address.png">
+                                    Belgrade
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                            <div class="user-card">
+                                <div class="user-card-like"><img src="./images/heart-small.png" alt=""></div>
+                                <div class="user-card-img">
+                                    <img src="./images/user-image.png" alt class="w-100">
+                                </div>
+                                <div class="user-info d-flex justify-content-between">
+                                    <div class="user-name">Jenna Luis <span class="user-age">29</span></div>
+                                    <div class="user-msg-icon">
+                                        <img src="./images/msg-filled-red.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="user-card-location">
+                                    <img src="./images/address.png">
+                                    Belgrade
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                            <div class="user-card">
+                                <div class="user-card-like"><img src="./images/heart-small.png" alt=""></div>
+                                <div class="user-card-img">
+                                    <img src="./images/user-image.png" alt class="w-100">
+                                </div>
+                                <div class="user-info d-flex justify-content-between">
+                                    <div class="user-name">Jenna Luis <span class="user-age">29</span></div>
+                                    <div class="user-msg-icon">
+                                        <img src="./images/msg-filled-red.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="user-card-location">
+                                    <img src="./images/address.png">
+                                    Belgrade
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                            <div class="user-card">
+                                <div class="user-card-like"><img src="./images/heart-small.png" alt=""></div>
+                                <div class="user-card-img">
+                                    <img src="./images/user-image.png" alt class="w-100">
+                                </div>
+                                <div class="user-info d-flex justify-content-between">
+                                    <div class="user-name">Jenna Luis <span class="user-age">29</span></div>
+                                    <div class="user-msg-icon">
+                                        <img src="./images/msg-filled-red.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="user-card-location">
+                                    <img src="./images/address.png">
+                                    Belgrade
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                            <div class="user-card">
+                                <div class="user-card-like"><img src="./images/heart-small.png" alt=""></div>
+                                <div class="user-card-img">
+                                    <img src="./images/user-image.png" alt class="w-100">
+                                </div>
+                                <div class="user-info d-flex justify-content-between">
+                                    <div class="user-name">Jenna Luis <span class="user-age">29</span></div>
+                                    <div class="user-msg-icon">
+                                        <img src="./images/msg-filled-red.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="user-card-location">
+                                    <img src="./images/address.png">
+                                    Belgrade
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 order-1 order-xl-2">
+                    <div class="user-right-side">
+                        <div class="user-right-side-info">
+                            <div class="user-right-side-img">
+                                <img src="./images/user-right-side.png" alt="">
+                            </div>
+                            <div class="user-right-side-wrapper">
+                                <div class="user-right-side-name">
+                                    <div class="active-user"></div> Jenna Luis <span class="user-right-age">29</span>
+                                </div>
+                                <p><small>Sent you a message</small></p>
+                            </div>
+                            <div class="read-msg">
+                                Read message <div class="remove"><img src="./images/x.png" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="user-right-side-info">
+                            <div class="user-right-side-img">
+                                <img src="./images/user-right-side.png" alt="">
+                            </div>
+                            <div class="user-right-side-wrapper">
+                                <div class="user-right-side-name">
+                                    <div class="active-user"></div> Jenna Luis <span class="user-right-age">29</span>
+                                </div>
+                                <p><small>Looked at your profile</small></p>
+                            </div>
+                            <div class="check-profile">
+                                Check profile <div class="remove"><img src="./images/x-red.png" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="user-right-side-info">
+                            <div class="user-right-side-img">
+                                <img src="./images/user-right-side.png" alt="">
+                            </div>
+                            <div class="user-right-side-wrapper">
+                                <div class="user-right-side-name">
+                                    <div class="active-user"></div> Jenna Luis <span class="user-right-age">29</span>
+                                </div>
+                                <p><small>Sent you a message</small></p>
+                            </div>
+                        </div>
+                        <div class="user-right-side-info">
+                            <div class="user-right-side-img">
+                                <img src="./images/user-right-side.png" alt="">
+                            </div>
+                            <div class="user-right-side-wrapper">
+                                <div class="user-right-side-name">
+                                    Jenna Luis <span class="user-right-age">29</span>
+                                </div>
+                                <p><small>Sent you a message</small></p>
+                            </div>
+                        </div>
+                        <div class="user-right-side-info">
+                            <div class="user-right-side-img">
+                                <img src="./images/user-right-side.png" alt="">
+                            </div>
+                            <div class="user-right-side-wrapper">
+                                <div class="user-right-side-name">
+                                    Jenna Luis <span class="user-right-age">29</span>
+                                </div>
+                                <p><small>Sent you a message</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <h3 class="footer-logo mb-3">Logo</h3>
+                    </div>
+                    <div class="offset-lg-3"></div>
+                    <div class="col-lg-3">
+                        <div class="footer-card">
+                            <h3 class="footer-card-title mb-3">Links</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">About us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terms & Conditions</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="footer-card">
+                            <h3 class="footer-card-title mb-3">Contact us</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div class="row">
+                                            <div class="col-md-2"><img src="./images/phone.png" alt></div>
+                                            <div class="col-md-10">88345 5552</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="row">
+                                            <div class="col-md-2"><img src="./images/location.png" alt></div>
+                                            <div class="col-md-10">Belgrade, Serbia</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                                <img src="./images/email.png" alt>
+                                            </div>
+                                            <div class="col-md-10">Softwarehaus.@gmail.com</div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dicta vitae voluptatem
+                            facilis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

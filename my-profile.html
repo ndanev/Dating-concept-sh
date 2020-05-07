@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My profile</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css.map">
+</head>
+
+<body>
+    <div class="user-profile-general-info-edit-wrapper">
+        <div class="user-profile-general-info-edit">
+            <div id="close-edit-form" class="close-edit-form"><img src="./images/x.png" alt=""></div>
+            <form>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="gender">Gender</label>
+                            <select class="form-control" name="gender">
+                                <option value="female">Female</option>
+                                <option value="male">Male</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Age</label>
+                            <input min="18" max="100" class="form-control" type="number" value="29" name="age"
+                                autocomplete="off">
+                        </div>
+                        <div class="form-group">
+                            <label for="appearance">Appearance</label>
+                            <select class="form-control" name="appearance">
+                                <option value="latin">Latin</option>
+                                <option value="white">White</option>
+                                <option value="black">Black</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="height">Height</label>
+                            <input min="0" class="form-control" type="number" value="167" name="height"
+                                autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="body">Body type</label>
+                            <select class="form-control" name="body">
+                                <option value="curvy">Curvy</option>
+                                <option value="curvy">Curvy</option>
+                                <option value="curvy">Curvy</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="status">Status</label>
+                            <select class="form-control" name="status">
+                                <option value="single">Single</option>
+                                <option value="relationship">Relationship</option>
+                                <option value="married">Married</option>
+                                <option value="divorced">Divorced</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="hair">Hair color</label>
+                            <select class="form-control" name="hair">
+                                <option value="brown">Brown</option>
+                                <option value="black">Black</option>
+                                <option value="blue">Blue</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="eye">Eye color</label>
+                            <select class="form-control" name="eye">
+                                <option value="brown">Brown</option>
+                                <option value="black">Black</option>
+                                <option value="blue">Blue</option>
+                                <option value="green">Green</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <button type="submit" class="submit-edited-form">Save</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="user-profile-about-edit-wrapper">
+        <div class="user-profile-about-edit">
+            <div id="close-edit-form-about" class="close-edit-form"><img src="./images/x.png" alt=""></div>
+            <form>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="about">About me</label>
+                            <textarea class="form-control" name="about" id="" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <button class="submit-edited-form" type="submit">Save</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="user-profile-info-wrapper">
+        <div class="user-profile-info-edit">
+            <div id="close-edit-form-info" class="close-edit-form"><img src="./images/x.png" alt=""></div>
+            <form>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input class="form-control" type="text" name="name" id="name" value="Jenna Luis"
+                                autocomplete="new-password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="birthday">Birth</label>
+                            <input class="form-control" type="date" name="birthday" id="birthday"
+                                autocomplete="new-password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Location</label>
+                            <select class="form-control" name="location" id="location" required>
+                                <option value="belgrade">Belgrade</option>
+                                <option value="paris">Paris</option>
+                                <option value="london">London</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="current-password">Current password</label>
+                            <input class="form-control" type="password" name="current-password" id="current-password"
+                                value="12345678" autocomplete="new-password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="new-password">New password</label>
+                            <input class="form-control" type="password" name="new-password" id="new-password"
+                                value="12345678" autocomplete="new-password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirm-new-password">Confirm new password</label>
+                            <input class="form-control" type="password" name="confirm-new-password"
+                                id="confirm-new-password" value="12345678" autocomplete="new-password" required>
+                        </div>
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <button class="submit-edited-form" type="submit">Save</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <header class="main-header">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="/">LOGO</a>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar top-bar"></span>
+                    <span class="icon-bar middle-bar"></span>
+                    <span class="icon-bar bottom-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/user-likes.html"><span class="likes-num">11</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/inbox.html"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link subscription-link" href="#">Subscription</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="offset-xl-2"></div>
+                <div class="col-xl-8 order-2 order-xl-1">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="user-profile-left">
+                                <div class="user-profile-left-image">
+                                    <div class="edit-btn edit-btn-img"><img src="./images/edit-btn-hover.png"></div>
+                                    <img src="./images/user-image.png" width="100%">
+                                </div>
+                                <div class="user-profile-info">
+                                    <div id="edit-btn-info" class="edit-btn"><img src="./images/edit-btn.png" alt="">
+                                    </div>
+                                    <h5 class="user-profile-info-name">
+                                        Jenna Luis <span class="user-age">29</span>
+                                    </h5>
+                                    <div class="active-user"></div> <span>Online</span>
+                                    <img class="ml-2" src="./images/address.png">
+                                    Belgrade
+                                    <div class="user-profile-info-gender">Female | Single</div>
+                                </div>
+                                <div class="user-profile-about">
+                                    <div id="edit-btn-about" class="edit-btn"><img src="./images/edit-btn.png" alt="">
+                                    </div>
+                                    <h5 class="user-profile-about-title">About me</h5>
+                                    <p class="user-profile-about-lead">
+                                        Lorem Ipsum is simply dummy text of the
+                                        printing and typesetting industry. Lorem
+                                        Ipsum has been the industry’s standard
+                                        dummy text ever since the 1500s, when an
+                                        unknown printer took a galley of type and
+                                        scrambled it to make a type specimen book.
+                                    </p>
+                                </div>
+                                <a href="#" class="report-link">Report</a>
+                            </div>
+                        </div>
+                        <div class="offset-md-1"></div>
+                        <div class="col-md-6">
+                            <div class="user-profile-right">
+                                <div class="user-profile-general-info">
+                                    <div id="edit-btn-general-info" class="edit-btn"> <img src="./images/edit-btn.png"
+                                            alt=""></div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div><span>Gender </span> Female</div>
+                                            <div><span>Age </span> 29</div>
+                                            <div><span>Hair color </span> Grey</div>
+                                            <div><span>Eye color </span> Blue</div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div><span>Appearance </span>Latin</div>
+                                            <div><span>Height </span>169</div>
+                                            <div><span>Body type </span>Curvy</div>
+                                            <div><span>Marital status </span>Divorced</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user-profile-images">
+                                    <div class="row">
+                                        <div
+                                            class="col-12 col-md-6 mb-4 d-flex flex-column align-items-center justify-content-center position-relative">
+                                            <div id="file-upload-area" class="file-upload-area">
+                                                <img src="./images/upload.png">
+                                                <p>Drag and drop</p>
+                                                <p>or</p>
+                                            </div>
+                                            <input type="file" id="input-file" class="input-file" />
+                                        </div>
+                                        <div class="col-6 mb-4">
+                                            <div class="user-image">
+                                                <div class="remove-icon"></div>
+                                                <img src="./images/user-image.png" width="100%">
+                                            </div>
+                                        </div>
+                                        <div class="col-6 mb-4">
+                                            <div class="user-image">
+                                                <div class="remove-icon"></div>
+                                                <img src="./images/user-image.png" width="100%">
+                                            </div>
+                                        </div>
+                                        <div class="col-6 mb-4">
+                                            <div class="user-image">
+                                                <div class="remove-icon"></div>
+                                                <img src="./images/user-image.png" width="100%">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="offset-md-1"></div>
+                    </div>
+                </div>
+                <div class="col-xl-2 order-1 order-xl-2">
+                    <div class="user-right-side">
+                        <div class="user-right-side-info">
+                            <div class="user-right-side-img">
+                                <img src="./images/user-right-side.png" alt="">
+                            </div>
+                            <div class="user-right-side-wrapper">
+                                <div class="user-right-side-name">
+                                    <div class="active-user"></div> Jenna Luis <span class="user-right-age">29</span>
+                                </div>
+                                <p><small>Sent you a message</small></p>
+                            </div>
+                            <div class="read-msg">
+                                Read message <div class="remove"><img src="./images/x.png" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="user-right-side-info">
+                            <div class="user-right-side-img">
+                                <img src="./images/user-right-side.png" alt="">
+                            </div>
+                            <div class="user-right-side-wrapper">
+                                <div class="user-right-side-name">
+                                    <div class="active-user"></div> Jenna Luis <span class="user-right-age">29</span>
+                                </div>
+                                <p><small>Looked at your profile</small></p>
+                            </div>
+                            <div class="check-profile">
+                                Check profile <div class="remove"><img src="./images/x-red.png" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="user-right-side-info">
+                            <div class="user-right-side-img">
+                                <img src="./images/user-right-side.png" alt="">
+                            </div>
+                            <div class="user-right-side-wrapper">
+                                <div class="user-right-side-name">
+                                    <div class="active-user"></div> Jenna Luis <span class="user-right-age">29</span>
+                                </div>
+                                <p><small>Sent you a message</small></p>
+                            </div>
+                        </div>
+                        <div class="user-right-side-info">
+                            <div class="user-right-side-img">
+                                <img src="./images/user-right-side.png" alt="">
+                            </div>
+                            <div class="user-right-side-wrapper">
+                                <div class="user-right-side-name">
+                                    Jenna Luis <span class="user-right-age">29</span>
+                                </div>
+                                <p><small>Sent you a message</small></p>
+                            </div>
+                        </div>
+                        <div class="user-right-side-info">
+                            <div class="user-right-side-img">
+                                <img src="./images/user-right-side.png" alt="">
+                            </div>
+                            <div class="user-right-side-wrapper">
+                                <div class="user-right-side-name">
+                                    Jenna Luis <span class="user-right-age">29</span>
+                                </div>
+                                <p><small>Sent you a message</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <h3 class="footer-logo mb-3">Logo</h3>
+                    </div>
+                    <div class="offset-lg-3"></div>
+                    <div class="col-lg-3">
+                        <div class="footer-card">
+                            <h3 class="footer-card-title mb-3">Links</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">About us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terms & Conditions</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="footer-card">
+                            <h3 class="footer-card-title mb-3">Contact us</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div class="row">
+                                            <div class="col-md-2"><img src="./images/phone.png" alt></div>
+                                            <div class="col-md-10">88345 5552</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="row">
+                                            <div class="col-md-2"><img src="./images/location.png" alt></div>
+                                            <div class="col-md-10">Belgrade, Serbia</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                                <img src="./images/email.png" alt>
+                                            </div>
+                                            <div class="col-md-10">Softwarehaus.@gmail.com</div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dicta vitae voluptatem
+                            facilis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
