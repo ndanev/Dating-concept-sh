@@ -87,7 +87,7 @@ ul {
 }
 
 .section-title {
-  font-size: 44px;
+  font-size: 45px;
   font-weight: 700;
   color: #ffffff;
   display: -webkit-box;
@@ -96,6 +96,12 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 767px) {
+  .section-title {
+    font-size: 35px;
+  }
 }
 
 .section-title-line {
@@ -134,6 +140,12 @@ ul {
   border: 1px solid #ffffff;
   padding: .25rem 25px;
   border-radius: 25px;
+}
+
+@media (max-width: 360px) {
+  .subscription-link {
+    font-size: 9px !important;
+  }
 }
 
 .subscription-link:hover, .subscription-link:active, .subscription-link:focus {
@@ -260,8 +272,10 @@ ul {
 }
 
 @media (max-width: 991px) {
-  .navbar-nav {
-    text-align: center;
+  .navbar-nav .nav-item .nav-register {
+    padding: .5rem 0;
+    border-radius: 0;
+    border: none;
   }
 }
 
@@ -277,6 +291,12 @@ ul {
 
 .hero .hero-content {
   margin-top: 150px;
+}
+
+@media (max-width: 767px) {
+  .hero .hero-content {
+    margin-top: 63px;
+  }
 }
 
 .hero .hero-content .hero-content-right {
@@ -299,6 +319,12 @@ ul {
 @media (max-width: 1220px) {
   .hero .hero-content .hero-title {
     font-size: 45px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero .hero-content .hero-title {
+    font-size: 35px;
   }
 }
 
@@ -418,6 +444,12 @@ ul {
 .section-features .feature-card {
   text-align: center;
   color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  .section-features .feature-card {
+    margin-bottom: 50px;
+  }
 }
 
 .section-features .feature-card img {
@@ -1579,6 +1611,41 @@ ul {
 .single-chatbox-wrapper .single-chatbox-footer .single-chatbox-footer-elements .single-chatbox-footer-elements-attachment label {
   margin-top: .5rem;
   cursor: pointer;
+}
+
+/* SUBSCRIPTION */
+.table thead th {
+  border-bottom: 1px solid #dee2e6;
+}
+
+.get-invoice-btn {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #ff1e56;
+  padding: 8px 35px;
+  border-radius: 25px;
+  border: 1px solid #ff1e56;
+  -webkit-transition: all .25s ease-out;
+  transition: all .25s ease-out;
+}
+
+.get-invoice-btn:hover, .get-invoice-btn:active, .get-invoice-btn:focus {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #98354d;
+}
+
+.subscription-wrapper .subscription-table table thead:first-child tr th {
+  border-top: none;
+  border-bottom: none;
+}
+
+.subscription-wrapper .subscription-table table thead tr th {
+  color: #ffffff;
+}
+
+.subscription-wrapper .subscription-table table tbody tr td {
+  color: #ffffff;
 }
 
 /* Range Slider */

@@ -87,11 +87,15 @@ ul {
 }
 
 .section-title {
-    font-size: 44px;
+    font-size: 45px;
     font-weight: 700;
     color: $color-white;
     display: flex;
     align-items: center;
+
+    @media(max-width: 767px) {
+        font-size: 35px;
+    }
 }
 
 .section-title-line {
@@ -133,6 +137,10 @@ ul {
     border: 1px solid $color-white;
     padding: .25rem 25px;
     border-radius: 25px;
+
+    @media (max-width: 360px) {
+        font-size: 9px !important;
+    }
 
     &:hover,
     &:active,
@@ -264,6 +272,11 @@ ul {
 .navbar-nav {
     .nav-item {
         margin-left: 15px;
+
+        // @media (max-width: 991px) {
+        //     margin-left: 0;
+        // }
+
         .nav-link {
             color: $color-white;
             transition: all .25s ease-out;
@@ -281,11 +294,13 @@ ul {
             border: 1px solid $secondary-color;
             padding: .5rem 25px;
             border-radius: 25px;
-        }
-    }
 
-    @media (max-width: 991px) {
-        text-align: center;
+            @media (max-width: 991px) {
+                padding: .5rem 0;
+                border-radius: 0;
+                border: none;
+            }
+        }
     }
 }
 
@@ -300,6 +315,10 @@ ul {
 
     .hero-content {
         margin-top: 150px;
+
+        @media (max-width: 767px) {
+            margin-top: 63px;
+        }
 
         .hero-content-right {
             margin-left: -100px;
@@ -317,6 +336,10 @@ ul {
 
             @media (max-width: 1220px) {
                 font-size: 45px;
+            }
+
+            @media (max-width: 767px) {
+                font-size: 35px;
             }
         }
 
@@ -420,12 +443,17 @@ ul {
         @media (max-width: 767px) {
             justify-content: center;
             margin-bottom: 50px;
+
         }
     }
 
     .feature-card {
         text-align: center;
         color: $color-white;
+
+        @media(max-width: 767px) {
+            margin-bottom: 50px;
+        }
 
         img {
             margin-top: 1rem;
@@ -1481,6 +1509,61 @@ ul {
         }
     }
 
+}
+
+
+/* SUBSCRIPTION */
+
+.table thead th {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.get-invoice-btn {
+    text-decoration: none;
+    color: $color-white;
+    background-color: $secondary-color;
+    padding: 8px 35px;
+    border-radius: 25px;
+    border: 1px solid $secondary-color;
+    transition: all .25s ease-out;
+
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: none;
+        color: $color-white;
+        background-color: #98354d;
+    }
+}
+
+.subscription-wrapper {
+    .subscription-table {
+        table {
+            thead {
+                &:first-child {
+                    tr {
+                        th {
+                            border-top: none;
+                            border-bottom: none;
+                        }
+                    }
+                }
+
+                tr {
+                    th {
+                        color: $color-white;
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    td {
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+    }
 }
 
 
