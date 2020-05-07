@@ -82,7 +82,7 @@ ul {
     padding: 75px 0;
 
     @media (max-width: 767px) {
-        padding: 25px 0;
+        padding: 50px 0;
     }
 }
 
@@ -98,7 +98,7 @@ ul {
     align-items: center;
 
     @media(max-width: 767px) {
-        font-size: 35px;
+        font-size: 30px;
     }
 }
 
@@ -343,7 +343,7 @@ ul {
             }
 
             @media (max-width: 767px) {
-                font-size: 35px;
+                font-size: 30px;
             }
         }
 
@@ -374,6 +374,11 @@ ul {
                     margin-bottom: 15px;
                 }
 
+                @media (max-width: 767px) {
+                    padding: 8px 35px;
+                    font-size: 16px;
+                }
+
                 &:hover,
                 &:active,
                 &:focus {
@@ -396,6 +401,12 @@ ul {
 
                 @media (max-width: 1144px) {
                     margin-left: 0;
+                }
+
+                
+                @media (max-width: 767px) {
+                    padding: 8px 35px;
+                    font-size: 16px;
                 }
                 
                 &:hover,
@@ -457,6 +468,10 @@ ul {
 
         @media(max-width: 767px) {
             margin-bottom: 50px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
 
         img {
@@ -498,7 +513,7 @@ ul {
                 padding: 75px;
 
                 @media (max-width: 560px) {
-                    padding: 75px 0;
+                    padding: 50px 0;
                 }
 
                 .section-title {

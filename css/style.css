@@ -84,7 +84,7 @@ ul {
 
 @media (max-width: 767px) {
   .section {
-    padding: 25px 0;
+    padding: 50px 0;
   }
 }
 
@@ -106,7 +106,7 @@ ul {
 
 @media (max-width: 767px) {
   .section-title {
-    font-size: 35px;
+    font-size: 30px;
   }
 }
 
@@ -330,7 +330,7 @@ ul {
 
 @media (max-width: 767px) {
   .hero .hero-content .hero-title {
-    font-size: 35px;
+    font-size: 30px;
   }
 }
 
@@ -365,6 +365,13 @@ ul {
   }
 }
 
+@media (max-width: 767px) {
+  .hero .hero-content .hero-btns .hero-register {
+    padding: 8px 35px;
+    font-size: 16px;
+  }
+}
+
 .hero .hero-content .hero-btns .hero-register:hover, .hero .hero-content .hero-btns .hero-register:active, .hero .hero-content .hero-btns .hero-register:focus {
   background-color: #98354d;
   color: #ffffff;
@@ -387,6 +394,13 @@ ul {
 @media (max-width: 1144px) {
   .hero .hero-content .hero-btns .hero-login {
     margin-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero .hero-content .hero-btns .hero-login {
+    padding: 8px 35px;
+    font-size: 16px;
   }
 }
 
@@ -456,6 +470,9 @@ ul {
   .section-features .feature-card {
     margin-bottom: 50px;
   }
+  .section-features .feature-card:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .section-features .feature-card img {
@@ -503,7 +520,7 @@ ul {
 
 @media (max-width: 560px) {
   .section-about .container-fluid .about-right .about-right-inner {
-    padding: 75px 0;
+    padding: 50px 0;
   }
 }
 
