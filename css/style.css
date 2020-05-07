@@ -971,7 +971,7 @@ ul {
 }
 
 .button-find:hover {
-  background-color: transparent;
+  background-color: #98354d;
 }
 
 /* User right side */
@@ -1618,6 +1618,23 @@ ul {
   border-bottom: 1px solid #dee2e6;
 }
 
+.table td, .table th {
+  padding: 1rem;
+}
+
+.cancle-subscription-btn {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  -webkit-transition: all .25s ease-out;
+  transition: all .25s ease-out;
+  margin-top: 25px;
+}
+
+.cancle-subscription-btn:hover {
+  color: #ffffff;
+}
+
 .get-invoice-btn {
   text-decoration: none;
   color: #ffffff;
@@ -1635,6 +1652,14 @@ ul {
   background-color: #98354d;
 }
 
+.subscription-wrapper {
+  margin-bottom: 50px;
+}
+
+.subscription-wrapper .subscription-table {
+  overflow-x: auto;
+}
+
 .subscription-wrapper .subscription-table table thead:first-child tr th {
   border-top: none;
   border-bottom: none;
@@ -1646,6 +1671,52 @@ ul {
 
 .subscription-wrapper .subscription-table table tbody tr td {
   color: #ffffff;
+}
+
+.subscription-info-table-wrapper .subscription-info-table-title {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+
+.subscription-info-table-wrapper .subscription-info-table-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+@media (max-width: 767px) {
+  .subscription-info-table-wrapper .subscription-info-table-card {
+    margin-bottom: 25px;
+  }
+}
+
+.subscription-info-table-wrapper .subscription-info-table-card small {
+  color: #808086;
+  margin-bottom: 5px;
+}
+
+.subscription-info-table-wrapper .subscription-info-table-card .subscription-info-table-card-text-place {
+  width: 100%;
+  height: 45px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
 }
 
 /* Range Slider */
