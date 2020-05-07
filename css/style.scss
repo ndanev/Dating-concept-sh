@@ -320,7 +320,11 @@ ul {
     .hero-content {
         margin-top: 150px;
 
-        @media (max-width: 767px) {
+        @media (width: 991px) {
+            margin-top: 75px;
+        }
+
+        @media (max-width: 768px) {
             margin-top: 63px;
         }
 

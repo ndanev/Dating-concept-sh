@@ -299,7 +299,13 @@ ul {
   margin-top: 150px;
 }
 
-@media (max-width: 767px) {
+@media (width: 991px) {
+  .hero .hero-content {
+    margin-top: 75px;
+  }
+}
+
+@media (max-width: 768px) {
   .hero .hero-content {
     margin-top: 63px;
   }
