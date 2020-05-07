@@ -22,6 +22,71 @@ html {
     scroll-behavior: smooth;
 }
 
+
+/* The container */
+.container-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .container-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container-checkbox:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container-checkbox input:checked ~ .checkmark {
+    background-color: $secondary-color;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container-checkbox input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container-checkbox .checkmark:after {
+       top: 4px;
+      left: 4px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: white;
+  }
+
 .icon-bar {
 	width: 22px; 
 	height: 2px;
@@ -275,11 +340,11 @@ ul {
 
 .navbar-nav {
     .nav-item {
-        margin-left: 15px;
+        margin-left: 25px;
 
-        // @media (max-width: 991px) {
-        //     margin-left: 0;
-        // }
+        @media (max-width: 991px) {
+            margin-left: 15px;
+        }
 
         .nav-link {
             color: $color-white;
@@ -972,6 +1037,10 @@ ul {
         font-size: 14px;
         color: $color-grey-text;
     }
+
+    .submit-form {
+        margin-top: 1rem;
+    }
 }
 
 .button-find {
@@ -982,6 +1051,18 @@ ul {
     border-radius: 20px;
     outline: none !important;
     transition: all .25s ease-out;
+
+    @media (max-width: 1381px) {
+        padding: 7px 35px;
+    }
+
+    @media (max-width: 1246px) {
+        padding: 7px 25px;
+    }
+
+    @media (max-width: 1199px) {
+        padding: 7px 35px;
+    }
 
     &:hover {
         background-color: #98354d;
