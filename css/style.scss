@@ -468,15 +468,18 @@ ul {
 
         @media(max-width: 767px) {
             margin-bottom: 50px;
-
-            &:last-child {
-                margin-bottom: 0;
-            }
         }
 
         img {
             margin-top: 1rem;
             margin-bottom: 1rem;
+        }
+    }
+
+    .feature-card-last-child {
+        
+        @media(max-width: 767px) {
+            margin-bottom: 0;
         }
     }
 }

@@ -470,14 +470,17 @@ ul {
   .section-features .feature-card {
     margin-bottom: 50px;
   }
-  .section-features .feature-card:last-child {
-    margin-bottom: 0;
-  }
 }
 
 .section-features .feature-card img {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+@media (max-width: 767px) {
+  .section-features .feature-card-last-child {
+    margin-bottom: 0;
+  }
 }
 
 .section-dark {
