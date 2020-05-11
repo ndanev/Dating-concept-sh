@@ -574,7 +574,7 @@ ul {
   position: relative;
 }
 
-.section-about .container-fluid .about-left-image {
+.section-about .about-left-image {
   background-image: url("../images/about-left.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -583,7 +583,7 @@ ul {
   width: 100%;
 }
 
-.section-about .container-fluid .about-right {
+.section-about .about-right {
   background-color: #ff1e56;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -593,21 +593,21 @@ ul {
           align-items: center;
 }
 
-.section-about .container-fluid .about-right .about-right-inner {
+.section-about .about-right .about-right-inner {
   padding: 75px;
 }
 
 @media (max-width: 560px) {
-  .section-about .container-fluid .about-right .about-right-inner {
+  .section-about .about-right .about-right-inner {
     padding: 50px 0;
   }
 }
 
-.section-about .container-fluid .about-right .about-right-inner .section-title {
+.section-about .section-title {
   margin-bottom: 25px;
 }
 
-.section-about .container-fluid .about-right .about-right-inner .about-lead {
+.section-about .about-lead {
   color: #ffffff;
 }
 
