@@ -1086,6 +1086,10 @@ ul {
         margin-bottom: 25px;
         display: flex;
         overflow-x: auto;
+        overflow-y: hidden;
+        width: 100%;
+        align-items: center;
+        justify-content: flex-start;
     }
 
     .user-right-side-info {
@@ -1099,8 +1103,10 @@ ul {
         cursor: pointer;
 
         @media (max-width: 1199px) {
-            // display: block;
             margin-right: 15px;
+            flex-direction: column;
+            height: 200px;
+            padding: 15px 40px;
         }
 
         &:hover > .read-msg,
@@ -1111,6 +1117,16 @@ ul {
         .user-right-side-img {
             border-radius: 50%;
             margin-right: 15px;
+
+            @media (max-width: 1199px) {
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+
             @media (max-width: 991px) {
                 display: flex;
                 align-items: center;
@@ -1123,10 +1139,18 @@ ul {
                 flex-direction: row;
                 align-items: center;
 
+                @media (max-width: 1199px) {
+                    margin-bottom: 5px;
+                }
+
                 @media (max-width: 991px) {
                     flex-direction: column;
                     text-align: center;
                 }
+            }
+
+            p {
+                font-size: 9px;
             }
         }
 
