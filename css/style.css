@@ -1216,7 +1216,8 @@ ul {
 }
 
 .user-right-side .user-right-side-info .user-right-side-wrapper p {
-  font-size: 9px;
+  font-size: 11px;
+  line-height: 1;
 }
 
 .user-right-side .user-right-side-info .read-msg {
