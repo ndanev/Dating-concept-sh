@@ -654,6 +654,10 @@ ul {
   text-decoration: none;
 }
 
+.footer .footer-top .footer-card .footer-card-list .footer-card-item .footer-card-link span {
+  display: inline-block;
+}
+
 .footer .footer-bottom {
   background-color: #1f1f1f;
   padding: 10px 0;

@@ -656,6 +656,16 @@ ul {
                     }
                 }
             }
+
+            .footer-card-list {
+                .footer-card-item {
+                    .footer-card-link {
+                        span {
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
         }
 
     }
