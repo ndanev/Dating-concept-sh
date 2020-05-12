@@ -214,7 +214,7 @@ ul {
 
 @media (max-width: 360px) {
   .subscription-link {
-    font-size: 9px !important;
+    font-size: 11px !important;
   }
 }
 
@@ -326,6 +326,12 @@ ul {
 @media (max-width: 991px) {
   .navbar-nav .nav-item {
     margin-left: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-nav .nav-item {
+    margin-left: 10px;
   }
 }
 
@@ -1130,6 +1136,7 @@ ul {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    padding: 15px 0;
   }
 }
 

@@ -208,7 +208,7 @@ ul {
     border-radius: 25px;
 
     @media (max-width: 360px) {
-        font-size: 9px !important;
+        font-size: 11px !important;
     }
 
     &:hover,
@@ -344,6 +344,10 @@ ul {
 
         @media (max-width: 991px) {
             margin-left: 15px;
+        }
+
+        @media (max-width: 767px) {
+            margin-left: 10px;
         }
 
         .nav-link {
@@ -1103,6 +1107,7 @@ ul {
         width: 100%;
         align-items: center;
         justify-content: flex-start;
+        padding: 15px 0;
     }
 
     .user-right-side-info {
