@@ -79,10 +79,10 @@ html {
   
   /* Style the indicator (dot/circle) */
   .container-checkbox .checkmark:after {
-       top: 4px;
-      left: 4px;
-      width: 12px;
-      height: 12px;
+      top: 6px;
+      left: 6px;
+      width: 8px;
+      height: 8px;
       border-radius: 50%;
       background: white;
   }
@@ -1175,6 +1175,10 @@ ul {
                 font-size: 11px;
                 line-height: 1;
                 color: #808086;
+
+                @media (max-width: 991px) {
+                    text-align: center;
+                }
             }
         }
 
