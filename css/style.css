@@ -293,6 +293,12 @@ ul {
   padding: .5rem 0rem;
 }
 
+@media (max-width: 991px) {
+  .header .navbar {
+    padding: .3rem 0rem;
+  }
+}
+
 .header .red-square {
   position: absolute;
   right: 0;

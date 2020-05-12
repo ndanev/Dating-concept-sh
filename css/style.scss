@@ -312,6 +312,10 @@ ul {
  
     .navbar {
         padding: .5rem 0rem;
+
+        @media (max-width: 991px) {
+            padding: .3rem 0rem;
+        }
     }
 
     .red-square {
