@@ -1241,6 +1241,8 @@ ul {
                 width: 100%;
                 border-radius: 2px;
                 opacity: .9;
+                flex-direction: column-reverse;
+                align-items: flex-end;
             }
         }
 
@@ -1265,6 +1267,8 @@ ul {
                 width: 100%;
                 border-radius: 2px;
                 opacity: .9;
+                flex-direction: column-reverse;
+                align-items: flex-end;
             }
         }
     }
@@ -1824,6 +1828,17 @@ ul {
             padding: 5px;
         }
     }
+}
+
+.subscription-expired-wrapper {
+    padding: 65px 0;
+    .subscription-expired {
+        text-align: center;
+        h4 {
+            color: $color-white;
+        }
+    }
+
 }
 
 

@@ -1307,6 +1307,13 @@ ul {
     width: 100%;
     border-radius: 2px;
     opacity: .9;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
 }
 
@@ -1338,6 +1345,13 @@ ul {
     width: 100%;
     border-radius: 2px;
     opacity: .9;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
 }
 
@@ -1948,6 +1962,18 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   padding: 5px;
+}
+
+.subscription-expired-wrapper {
+  padding: 65px 0;
+}
+
+.subscription-expired-wrapper .subscription-expired {
+  text-align: center;
+}
+
+.subscription-expired-wrapper .subscription-expired h4 {
+  color: #ffffff;
 }
 
 /* Range Slider */
