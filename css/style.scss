@@ -933,6 +933,19 @@ ul {
     label {
         color: $color-grey-text;
     }
+
+    .form-control {
+        @media (max-width: 767px) {
+            height: 30px;
+        }
+    }
+
+    .form-group {
+        @media (max-width: 767px) {
+            margin-bottom: .3rem;
+        }
+    }
+        
 }
 
 .user-profile-about-edit-wrapper {
@@ -1152,6 +1165,7 @@ ul {
             p {
                 font-size: 11px;
                 line-height: 1;
+                color: #808086;
             }
         }
 

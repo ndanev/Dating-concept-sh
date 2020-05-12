@@ -941,6 +941,18 @@ ul {
   color: #808086;
 }
 
+@media (max-width: 767px) {
+  .user-profile-general-info-edit .form-control {
+    height: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .user-profile-general-info-edit .form-group {
+    margin-bottom: .3rem;
+  }
+}
+
 .user-profile-about-edit-wrapper {
   position: fixed;
   top: 0;
@@ -1218,6 +1230,7 @@ ul {
 .user-right-side .user-right-side-info .user-right-side-wrapper p {
   font-size: 11px;
   line-height: 1;
+  color: #808086;
 }
 
 .user-right-side .user-right-side-info .read-msg {
