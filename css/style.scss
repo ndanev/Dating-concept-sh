@@ -228,10 +228,48 @@ ul {
     cursor: pointer;
 }
 
+
+
+
+
+
 .input-file {
-    width: 100%;
-    color: $color-white;
+    // width: 100%;
+    // color: $color-white;
+
+
+    width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+    z-index: -1;
 }
+
+.input-file + label {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    background-color: $secondary-color;
+    display: inline-block;
+    cursor: pointer;
+    transition: all .25s ease-out;
+    padding: 8px 35px;
+    border-radius: 20px;
+}
+
+.input-file:focus + label,
+.input-file + label:hover {
+    background-color: #44ba51;
+}
+
+.input-file:focus + label {
+	outline: 1px dotted #000;
+	outline: -webkit-focus-ring-color auto 5px;
+}
+
+
+
 
 .drop {
     border: 1px dashed $secondary-color;
@@ -1695,9 +1733,11 @@ ul {
     font-weight: 700;
     transition: all .25s ease-out;
     margin-top: 25px;
+    text-decoration: underline;
+    padding-bottom: 3px;
 
     &:hover {
-        color: $color-white
+        color: $secondary-color;
     }
 }
 
